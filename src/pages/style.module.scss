@@ -1,0 +1,37 @@
+body {
+  background-color: #f3f3f3;
+}
+.login {
+  width: 500px;
+  height: 370px;
+  margin: 80px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  font-family: Monospace;
+  font-size: 16px;
+  box-shadow: 5px 10px #c9cbcd;
+  &_info {
+    margin-left: 50px;
+    width: 80%;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    padding: 0 15px;
+    &:focus {
+      border: none;
+      outline: 1px solid rgb(9, 183, 226);
+    }
+  }
+  span {
+    color: red;
+    font-family: sans-serif;
+  }
+  button {
+    background-color: #007acc;
+    border: none;
+    color: #fff;
+  }
+}

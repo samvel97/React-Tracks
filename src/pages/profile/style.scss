@@ -1,0 +1,32 @@
+.Banner {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #d5d5d5;
+  width: 40%;
+  margin: 20px auto;
+  background-color: snow;
+
+  .bi {
+    margin-top: 20px;
+  }
+}
+.Tracksblock {
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+  padding-left: 20px;
+  background-color: snow;
+  h2 {
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 30px;
+    font-family: serif;
+  }
+  audio {
+    width: 80%;
+    height: 30px;
+  }
+}
+
+h1 {
+  font-family: serif;
+}
