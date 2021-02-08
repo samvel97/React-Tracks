@@ -19,6 +19,10 @@ const loginHandler = async (e)=>{
     dispatch({type:'ISAUTH'})
   }
   catch(e){
+    if(form.username.length === 0 && form.password.length === 0){
+      alert('You need to fill in the line!!!')
+      return
+    }
   }
 }
 
@@ -26,9 +30,26 @@ const loginHandler = async (e)=>{
     <>
     <form className={style.login} onSubmit={loginHandler} >
       <h2>JOIN US</h2>
-      <input type='text' name='username' value={form.username} onChange={changeHandler} placeholder='Email' className={style.login_info}/><br/>      
-      <input type='password' name='password' value={form.password} onChange={changeHandler} placeholder='Password'  className={style.login_info}/><br/>
-      <button type='submit' className={style.login_info}>Log in</button>
+      <input 
+        type='text' 
+        name='username' 
+        value={form.username} 
+        onChange={changeHandler} 
+        placeholder='Email' 
+        className={style.login_info}
+      /><br/>      
+      <input 
+        type='password' 
+        name='password' 
+        value={form.password} 
+        onChange={changeHandler} 
+        placeholder='Password'  
+        className={style.login_info}
+      /><br/>
+      <button 
+        type='submit' 
+        className={style.login_info}>Log in
+      </button>
     </form>
   </>
   )
